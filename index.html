@@ -1,43 +1,31 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Profile & Course Portal </title>
+    <title>index.html</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
 
-<header>
-  <h1>Student Profile & Course Portal</h1>
-</header>
+   
+     <div id="start-screen">
+        <h1>Interactive Quiz Master 🧠</h1>
+        <button id="start-btn">Start Quiz</button>
+    </div> 
 
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="profile.html">Profile</a></li>
-    <li><a href="courses.html">Courses</a></li>
-    <li><a href="grades.html">Grades</a></li>
-    <li><a href="feedback.html">Feedback</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</nav>
+     <div id="quiz-screen" class="hide">
+        <h2 id="question">Question text</h2>
+        <div id="answer-buttons"></div>
+        <button id="next-btn">Next</button>
+    </div> 
 
-<main>
-  <p>
-    Welcome to the Student Profile & Course Portal.
-    This website helps you view student details, courses, grades,
-    and submit feedback.
-  </p>
-</main>
-
-<footer>
-  <p>© 2026 Student Portal</p>
-</footer>
+     <div id="result-screen" class="hide">
+        <h2>Your Result</h2>
+        <p id="score"></p>
+        <button id="restart-btn">Restart Quiz</button>
+    </div> 
 
 
-
-
-
-    
-</body>
-</html>
+<script src="script.js"></script>
